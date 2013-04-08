@@ -57,7 +57,7 @@ if ( ! class_exists( 'woomoresort_plugin' ) ) {
 			?>
 		<div class="wrap">
 			<h2>WooCommerce More Sorting Options</h2>			
-			<form method="post" action="options.php">
+			<form method="post">
 				<div id="message" class="updated fade"><p><strong>*You need <a href='http://www.algoritmika.com/shop/wordpress-woocommerce-more-sorting-pro-plugin/'>'WooCommerce More Sorting Pro'</a> plugin version to change these settings.</strong></p></div>
 				<h3>Change Text</h3>
 				<table class="form-table">
