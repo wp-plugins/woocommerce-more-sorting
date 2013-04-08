@@ -66,7 +66,7 @@ if ( ! class_exists( 'woomoresort_plugin' ) ) {
 				</table>
 				<h3>General Options</h3>
 				<table class="form-table">
-				<tr valign="top"><th scope="row">Display on single product</th><td><input disabled type="checkbox" checked id="woomoresort_pro_remove_sorting_id" name="woomoresort_pro_option_group[woomoresort_pro_remove_sorting]" /></td></tr>
+				<tr valign="top"><th scope="row">Remove all sorting</th><td><input disabled type="checkbox" checked id="woomoresort_pro_remove_sorting_id" name="woomoresort_pro_option_group[woomoresort_pro_remove_sorting]" /></td></tr>
 				</table>
 				<?php submit_button(); ?>
 			</form>
