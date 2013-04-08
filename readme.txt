@@ -4,7 +4,7 @@ Donate link: http://algoritmika.com/donate/
 Tags: woocommerce,sorting,orderby
 Requires at least: 3.5.1
 Tested up to: 3.5.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ You need [WooCommerce More Sorting Pro plugin](http://www.algoritmika.com/shop/w
 1. 'Sort alphabetically: A to Z' and 'Sort alphabetically: Z to A' sorting options added.
 
 == Changelog ==
+
+= 1.0.2 =
+* Minor bug fixed
 
 = 1.0.1 =
 * Minor bug fixed
