@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce More Sorting
 Plugin URI: http://www.algoritmika.com/shop/wordpress-woocommerce-more-sorting-plugin/
 Description: Add more sorting options to WooCommerce WordPress Plugin.
-Version: 1.0.0
+Version: 1.0.4
 Author: Algoritmika Ltd.
 Author URI: http://www.algoritmika.com
 License: GPLv2 or later
