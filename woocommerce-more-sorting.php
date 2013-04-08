@@ -59,9 +59,14 @@ if ( ! class_exists( 'woomoresort_plugin' ) ) {
 			<h2>WooCommerce More Sorting Options</h2>			
 			<form method="post" action="options.php">
 				<div id="message" class="updated fade"><p><strong>*You need <a href='http://www.algoritmika.com/shop/wordpress-woocommerce-more-sorting-pro-plugin/'>'WooCommerce More Sorting Pro'</a> plugin version to change these settings.</strong></p></div>
+				<h3>Change Text</h3>
 				<table class="form-table">
 				<tr valign="top"><th scope="row">Text for "Sort: A to Z"</th><td><input type="text" readonly style="width:300px;" id="woomoresort_pro_textAtoZ_id" name="woomoresort_pro_option_group[woomoresort_pro_textAtoZ]" value="Sort: A to Z" /></td></tr>
 				<tr valign="top"><th scope="row">Text for "Sort: Z to A"</th><td><input type="text" readonly style="width:300px;" id="woomoresort_pro_textZtoA_id" name="woomoresort_pro_option_group[woomoresort_pro_textZtoA]" value="Sort: Z to A" /></td></tr>
+				</table>
+				<h3>General Options</h3>
+				<table class="form-table">
+				<tr valign="top"><th scope="row">Display on single product</th><td><input disabled type="checkbox" checked id="woomoresort_pro_remove_sorting_id" name="woomoresort_pro_option_group[woomoresort_pro_remove_sorting]" /></td></tr>
 				</table>
 				<?php submit_button(); ?>
 			</form>
