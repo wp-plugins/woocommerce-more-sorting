@@ -37,7 +37,7 @@ You need [WooCommerce More Sorting Pro plugin](http://www.algoritmika.com/shop/w
 
 == Screenshots ==
 
-1. "Sort alphabetically: A to Z" and "Sort alphabetically: Z to A" sorting options added.
+1. 'Sort alphabetically: A to Z' and 'Sort alphabetically: Z to A' sorting options added.
 
 == Changelog ==
 
