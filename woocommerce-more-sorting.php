@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce More Sorting
 Plugin URI: http://www.algoritmika.com/shop/wordpress-woocommerce-more-sorting-plugin/
 Description: Add more sorting options to WooCommerce WordPress Plugin.
-Version: 1.0.4
+Version: 1.0.5
 Author: Algoritmika Ltd.
 Author URI: http://www.algoritmika.com
 License: GPLv2 or later
@@ -32,7 +32,30 @@ if ( ! class_exists( 'woomoresort_plugin' ) ) {
 		}
 		
 		function custom_woocommerce_get_catalog_ordering_args( $args ) {
-			if (isset($_GET['orderby'])) {
+			global $woocommerce;
+			// Get ordering from query string unless defined
+			$orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+			// Get order + orderby args from string
+			$orderby_value = explode( '-', $orderby_value );
+			$orderby       = esc_attr( $orderby_value[0] );
+			//$order         = ! empty( $orderby_value[1] ) ? $orderby_value[1] : $order;
+
+			switch ($orderby) :
+				case 'title_asc' :
+					$args['orderby'] = 'title';
+					$args['order'] = 'asc';
+					$args['meta_key'] = '';
+				break;			
+				case 'title_desc' :
+					$args['orderby'] = 'title';
+					$args['order'] = 'desc';
+					$args['meta_key'] = '';
+				break;
+
+			endswitch;
+				
+			return $args;			
+			/*if (isset($_GET['orderby'])) {
 				switch ($_GET['orderby']) :
 					case 'title_asc' :
 						$args['orderby'] = 'title';
@@ -46,7 +69,7 @@ if ( ! class_exists( 'woomoresort_plugin' ) ) {
 					break;
 				endswitch;
 			}
-			return $args;
+			return $args;*/
 		}
 		
 		public function add_plugin_options_page(){
@@ -62,7 +85,13 @@ if ( ! class_exists( 'woomoresort_plugin' ) ) {
 				<h3>Change Text</h3>
 				<table class="form-table">
 				<tr valign="top"><th scope="row">Text for "Sort: A to Z"</th><td><input type="text" readonly style="width:300px;" id="woomoresort_pro_textAtoZ_id" name="woomoresort_pro_option_group[woomoresort_pro_textAtoZ]" value="Sort: A to Z" /></td></tr>
+				<tr valign="top"><th scope="row">Remove A to Z</th><td><input disabled type="checkbox" checked id="woomoresort_pro_remove_AtoZ_id" name="woomoresort_pro_option_group[woomoresort_pro_AtoZ_sorting]" /></td></tr>				
 				<tr valign="top"><th scope="row">Text for "Sort: Z to A"</th><td><input type="text" readonly style="width:300px;" id="woomoresort_pro_textZtoA_id" name="woomoresort_pro_option_group[woomoresort_pro_textZtoA]" value="Sort: Z to A" /></td></tr>
+				<tr valign="top"><th scope="row">Remove Z to A</th><td><input disabled type="checkbox" checked id="woomoresort_pro_remove_ZtoA_id" name="woomoresort_pro_option_group[woomoresort_pro_ZtoA_sorting]" /></td></tr>				
+				<tr valign="top"><th scope="row">Text for "SKU: Ascending"</th><td><input type="text" readonly style="width:300px;" id="woomoresort_pro_textskuAsc_id" name="woomoresort_pro_option_group[woomoresort_pro_textskuAsc]" value="SKU: Ascending" /></td></tr>
+				<tr valign="top"><th scope="row">Remove SKU Asc</th><td><input checked disabled type="checkbox" checked id="woomoresort_pro_remove_skuAsc_id" name="woomoresort_pro_option_group[woomoresort_pro_skuAsc_sorting]" /></td></tr>				
+				<tr valign="top"><th scope="row">Text for "SKU: Descending"</th><td><input type="text" readonly style="width:300px;" id="woomoresort_pro_textskuDesc_id" name="woomoresort_pro_option_group[woomoresort_pro_textskuDesc]" value="SKU: Descending" /></td></tr>
+				<tr valign="top"><th scope="row">Remove SKU Desc</th><td><input checked disabled type="checkbox" checked id="woomoresort_pro_remove_skuDesc_id" name="woomoresort_pro_option_group[woomoresort_pro_skuDesc_sorting]" /></td></tr>				
 				</table>
 				<h3>General Options</h3>
 				<table class="form-table">

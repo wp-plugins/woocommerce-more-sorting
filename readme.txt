@@ -4,7 +4,7 @@ Donate link: http://algoritmika.com/donate/
 Tags: woocommerce,sorting,orderby
 Requires at least: 3.5.1
 Tested up to: 3.5.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ This plugin extends the WooCommerce e-commerce plugin by adding "Sort: A to Z" a
 
 This plugin extends the WooCommerce e-commerce plugin by adding "Sort alphabetically: A to Z" and "Sort alphabetically: Z to A" sorting options.
 
-This version was tested with WooCommerce 2.0.5.
+This version was tested with WooCommerce 2.x.x.
 
 = Feedback =
 * We are open to your suggestions and feedback - Thank you for using or trying out one of our plugins!
@@ -41,6 +41,9 @@ You need [WooCommerce More Sorting Pro plugin](http://www.algoritmika.com/shop/w
 
 == Changelog ==
 
+= 1.0.5 =
+* Default sorting bug fixed
+
 = 1.0.4 =
 * Minor bug fixed
 
@@ -59,4 +62,4 @@ You need [WooCommerce More Sorting Pro plugin](http://www.algoritmika.com/shop/w
 == Upgrade Notice ==
 
 = 1.0.0 =
-This version was tested with WooCommerce 2.0.5
+This version was tested with WooCommerce 2.x.x
