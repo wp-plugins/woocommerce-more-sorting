@@ -1,27 +1,31 @@
 === WooCommerce More Sorting ===
 Contributors: algoritmika
 Donate link: http://algoritmika.com/donate/
-Tags: woocommerce,sorting,orderby
-Requires at least: 3.5.1
-Tested up to: 3.5.1
-Stable tag: 1.0.6
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: woocommerce,sorting
+Requires at least: 3.8
+Tested up to: 4.2
+Stable tag: 2.0.0
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin extends the WooCommerce e-commerce plugin by adding "Sort: A to Z" and "Sort: Z to A" sorting options.
+WooCommerce More Sorting is a plugin that extends the WooCommerce by adding more product sorting options.
 
 == Description ==
 
-This plugin extends the WooCommerce e-commerce plugin by adding "Sort alphabetically: A to Z" and "Sort alphabetically: Z to A" sorting options.
-
-This version was tested with WooCommerce 2.x.x.
+Plugin adds new product sorting options to WooCommerce:
+* Sort by title: A to Z
+* Sort by title: Z to A
+* Sort by SKU: low to high
+* Sort by SKU: high to low
+* Sort by stock quantity: low to high
+* Sort by stock quantity: high to low
 
 = Feedback =
 * We are open to your suggestions and feedback - Thank you for using or trying out one of our plugins!
 * Drop us a line at [www.algoritmika.com](http://www.algoritmika.com)
 
 = More =
-* Vist the [WooCommerce More Sorting plugin page](http://www.algoritmika.com/shop/wordpress-woocommerce-more-sorting-plugin/)
+* Visit the [WooCommerce More Sorting plugin page](http://coder.fm/items/woocommerce-more-sorting-plugin/)
 
 == Installation ==
 
@@ -31,15 +35,23 @@ This version was tested with WooCommerce 2.x.x.
 
 == Frequently Asked Questions ==
 
-= Can I change name of sorting option? =
+= Can I change text for added sorting options? =
 
-You need [WooCommerce More Sorting Pro plugin](http://www.algoritmika.com/shop/wordpress-woocommerce-more-sorting-pro-plugin) to change these settings.
+Yes, just go to "WooCommerce > Settings > More Sorting".
+
+= Will added sorting options work as default options? =
+
+Yes, You can set added sorting options work as default - just go to "WooCommerce > Settings > Products > Display > Default Product Sorting".
 
 == Screenshots ==
 
-1. 'Sort alphabetically: A to Z' and 'Sort alphabetically: Z to A' sorting options added.
+1. Admin options.
 
 == Changelog ==
+
+= 2.0.0 - 30/07/2014 =
+* Dev - Sort by SKU and by stock quantity options added.
+* Dev - Major code refactoring. Settings are moved to "WooCommerce > Settings > More Sorting".
 
 = 1.0.6 =
 * Minor bug fixed
@@ -65,4 +77,4 @@ You need [WooCommerce More Sorting Pro plugin](http://www.algoritmika.com/shop/w
 == Upgrade Notice ==
 
 = 1.0.0 =
-This version was tested with WooCommerce 2.x.x
+This is the first release of the plugin.
