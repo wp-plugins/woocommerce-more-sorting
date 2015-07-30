@@ -13,6 +13,7 @@ WooCommerce More Sorting is a plugin that extends the WooCommerce by adding more
 == Description ==
 
 Plugin adds new product sorting options to WooCommerce:
+
 * Sort by title: A to Z
 * Sort by title: Z to A
 * Sort by SKU: low to high
